@@ -1,101 +1,202 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTablet,
+  faWeightScale,
+  faFaceAngry,
+  faFlask,
+  faLeaf,
+  faFlag,
+  faCartPlus,
+  faTree,
+  faCarCrash,
+} from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="h-screen p-8">
+      <div className="bg-[#e3f5fb] h-full w-full">
+        <h1 className="text-center text-[#013569] text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold p-8">
+          Essential Vitamins
+        </h1>
+        <div className="flex flex-col sm:flex-row md:flex-row">
+          <div className="flex flex-col basis-1/3 items-center mt-8 sm:mt-6 md:mt-0 lg:mt-0">
+            <div>
+              <p className="mb-2 text-slate-500 text-lg">
+                Online Medical Supplies
+              </p>
+              <p className="text-[#013569] font-semibold text-2xl">
+                Get Your Vitamins
+              </p>
+              <p className="text-[#013569] font-semibold text-2xl mb-2">
+                & Minerals
+              </p>
+              <button className="rounded-3xl bg-[#18414e] h-10 w-36">
+                <p className="text-white">Explore</p>
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-col basis-1/3 items-center mt-6 md:m-0 lg:m-0">
+            <div>
+              <Image
+                src="/assets/f2-1.png"
+                alt="bottle"
+                layout="responsive"
+                width={300}
+                height={300}
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                priority={true}
+              />
+            </div>
+          </div>
+          <div className="flex  flex-col basis-1/3 items-center mt-8">
+            <div className="flex items-center mb-4">
+              <div className="flex rounded-full h-12 w-12 bg-[#18414e] justify-center items-center">
+                <FontAwesomeIcon icon={faTablet} />
+              </div>
+              <div className="ml-4 w-52">
+                <p className="text-[#18414e] text-xl font-bold">Vitamins</p>
+                <p className="text-slate-500 text-xs">
+                  Increased Vitamins and minerals in your diet
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center mb-4">
+              <div className="flex rounded-full h-12 w-12 bg-[#18414e] justify-center items-center">
+                <FontAwesomeIcon icon={faWeightScale} />
+              </div>
+              <div className="ml-4 w-52">
+                <p className="text-[#18414e] text-xl font-bold">Weight Loss</p>
+                <p className="text-slate-500 text-xs">
+                  Weight Loss Find scientifically proven solutions
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center mb-4">
+              <div className="flex rounded-full h-12 w-12 bg-[#18414e] justify-center items-center">
+                <FontAwesomeIcon icon={faFaceAngry} />
+              </div>
+              <div className="ml-4 w-52">
+                <p className="text-[#18414e] text-xl font-bold">
+                  Functional Foods
+                </p>
+                <p className="text-slate-500 text-xs">
+                  Functional Foods From protein powers to baby formula
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="rounded-[50px] mt-20 md:mt:28 lg:mt-28 h-dvh md:h-3/5 lg:h-3/5 w-full md:w-11/12 lg:w-4/5 bg-[#18414e] items-center mx-auto my-auto relative">
+          <div className="absolute top-[-40px] md:top-[-60px] lg:top-[-60px] w-full">
+            <div className="flex flex-col md:flex-row lg:flex-row items-center mb-12">
+              <div className="flex flex-col mb-4 md:mb-0 lg:mb-0 basis-1/3 items-center justify-center ">
+                <div className="flex rounded-full bg-white h-16 w-16 md:h-24 md:w-24 lg:h-24 lg:w-24  items-center justify-center">
+                  <FontAwesomeIcon
+                    icon={faFlask}
+                    className="text-[25px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[50px]"
+                  />
+                </div>
+                <p className="text-white text-lg font-semibold mt-2 mb-2">
+                  Clinically Studied
+                </p>
+                <p className="text-slate-300 text-xs text-center w-52">
+                  All products that we offer have undergone lab and safety tests
+                </p>
+              </div>
+              <div className="flex basis-1/3 items-center mb-4 md:mb-0 lg:mb-0 justify-center">
+                <div className="flex flex-col basis-1/3 items-center justify-center ">
+                  <div className="flex rounded-full bg-white h-16 w-16 md:h-24 md:w-24 lg:h-24 lg:w-24  items-center justify-center">
+                    <FontAwesomeIcon
+                      icon={faLeaf}
+                      className="text-[25px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[50px]"
+                    />
+                  </div>
+                  <p className="text-white text-lg font-semibold mt-2 mb-2">
+                    Vegetarian Friendly
+                  </p>
+                  <p className="text-slate-300 text-xs text-center w-56 ">
+                    We have a wide selection of vegetarian products to meet your
+                    needs
+                  </p>
+                </div>
+              </div>
+              <div className="flex basis-1/3 items-center justify-center mb-2 md:mb-0 lg:mb-0">
+                <div className="flex flex-col basis-1/3 items-center justify-center ">
+                  <div className="flex rounded-full bg-white h-16 w-16 md:h-24 md:w-24 lg:h-24 lg:w-24  items-center justify-center">
+                    <FontAwesomeIcon
+                      icon={faFlag}
+                      className="text-[25px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[50px]"
+                    />
+                  </div>
+                  <p className="text-white text-lg font-semibold mt-2 mb-2">
+                    Made in India
+                  </p>
+                  <p className="text-slate-300 text-xs text-center w-52">
+                    Shop local and explore health products made right here in
+                    India
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute w-full top-0 bottom-0 mt-52">
+            <div className="flex flex-col md:flex-row lg:flex-row mt-60 md:mt-0 lg:mt-0 items-center">
+              <div className="flex basis-1/3 items-center justify-center">
+                <div className="flex flex-col basis-1/3 items-center justify-center ">
+                  <div className="flex rounded-full bg-white h-16 w-16 md:h-24 md:w-24 lg:h-24 lg:w-24 items-center justify-center">
+                    <FontAwesomeIcon
+                      icon={faCartPlus}
+                      className="text-[25px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[50px]"
+                    />
+                  </div>
+                  <p className="text-white text-lg font-semibold mt-2 mb-2">
+                    Free shipping
+                  </p>
+                  <p className="text-slate-300 text-xs text-center w-52">
+                    We deliver to your door with no shipping costs on your
+                    orders
+                  </p>
+                </div>
+              </div>
+              <div className="flex basis-1/3 items-center justify-center mt-4">
+                <div className="flex flex-col basis-1/3 items-center justify-center ">
+                  <div className="flex rounded-full bg-white h-16 w-16 md:h-24 md:w-24 lg:h-24 lg:w-24 items-center justify-center">
+                    <FontAwesomeIcon
+                      icon={faCarCrash}
+                      className="text-[25px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[50px]"
+                    />
+                  </div>
+                  <p className="text-white text-lg font-semibold mt-2 mb-2">
+                    No Risk
+                  </p>
+                  <p className="text-slate-300 text-xs text-center w-52">
+                    We ensure that all products are safe and within their use-by
+                    date
+                  </p>
+                </div>
+              </div>
+              <div className="flex basis-1/3 items-center justify-center mt-4">
+                <div className="flex flex-col basis-1/3 items-center justify-center ">
+                  <div className="flex rounded-full  bg-white h-16 w-16 md:h-24 md:w-24 lg:h-24 lg:w-24 items-center justify-center">
+                    <FontAwesomeIcon
+                      icon={faTree}
+                      className="text-[25px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[50px]"
+                    />
+                  </div>
+                  <p className="text-white text-lg font-semibold mt-2 mb-2">
+                    GMO free
+                  </p>
+                  <p className="text-slate-300 text-xs text-center w-52">
+                    Natural, no modified products and derivatives for those who
+                    need it
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
