@@ -13,11 +13,13 @@ import {
 import Image from "next/image";
 import Ingredient from "@/components/ingredient/ingredients";
 import Blog from "@/components/blog/blog";
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
   return (
-    <div className="h-screen p-8">
-      <div className="bg-[#e3f5fb] h-full w-full">
+   <div>
+     <div className="h-screen p-8">
+      <div className="bg-[#e3f5fb] h-full">
         <div >
           <h1 className="text-center text-[#013569] text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold p-8">
             Essential Vitamins
@@ -201,11 +203,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Ingredient></Ingredient>
-        <Blog></Blog>
       </div>
     </div>
-
-
+    <Ingredient></Ingredient>
+        <Blog></Blog>
+        <Footer></Footer>
+   </div>
   );
 }
