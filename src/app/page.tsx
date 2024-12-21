@@ -27,12 +27,13 @@ const FooterComponent = dynamic(() => import("@/components/footer/footer"), {
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <div className="h-screen p-4 lg:p-8 md:p-8 xl:p-8 2xl:p-8">
+      <div className="h-screen p-4  lg:p-8 md:p-8 xl:p-8 2xl:p-8">
         <div className="bg-[#e3f5fb] h-full">
-          <div className="mt-2" >
-            <h1 className="text-center text-[#013569] text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold">
+          <div>
+            <div className="h-4 md:h-10 lg:h-10 xl:h-10 2xl:h-10"></div>
+            <p className="text-center text-[#013569] text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold">
               Essential Vitamins
-            </h1>
+            </p>
             <div className="flex flex-col sm:flex-row md:flex-row items-center">
               <div className="flex flex-col basis-1/3 items-end mt-2 sm:mt-6 md:mt-0 lg:mt-0 xl:mt-6">
                 <div>
