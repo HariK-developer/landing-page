@@ -11,7 +11,8 @@ import {
   faCarCrash,
 } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import Ingredient from "@/components/ingredients/ingredients";
+import Ingredient from "@/components/ingredient/ingredients";
+import Blog from "@/components/blog/blog";
 
 export default function Home() {
   return (
@@ -201,6 +202,7 @@ export default function Home() {
           </div>
         </div>
         <Ingredient></Ingredient>
+        <Blog></Blog>
       </div>
     </div>
 
