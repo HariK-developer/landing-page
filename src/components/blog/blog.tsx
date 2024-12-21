@@ -18,7 +18,7 @@ export default function Blog() {
                             height={300}
                             priority={true}
                         />
-                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-blue-500 bg-[#013569] rounded-r-full items-center justify-center">
+                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-[#013569] rounded-r-full items-center justify-center">
                             <p className="text-white text-xs font-semibold">20 APR</p>
                         </div>
                         <p className="absolute top-16 w-[80%] text-medium text-white ml-8 font-semibold">The Covid-19 Epidemic In 2022 Is Back</p>
@@ -32,7 +32,7 @@ export default function Blog() {
                             height={20}
                             priority={true}
                         />
-                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-blue-500 bg-[#013569] rounded-r-full items-center justify-center">
+                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-[#013569] rounded-r-full items-center justify-center">
                             <p className="text-white text-xs font-semibold">20 APR</p>
                         </div>
                         <p className="absolute top-16 w-[80%] text-medium text-white ml-8 font-semibold">The Covid-19 Epidemic In 2023 Is Back</p>
@@ -48,7 +48,7 @@ export default function Blog() {
                             height={300}
                             priority={true}
                         />
-                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-blue-500 bg-[#013569] rounded-r-full items-center justify-center">
+                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-[#013569] rounded-r-full items-center justify-center">
                             <p className="text-white text-xs font-semibold">20 APR</p>
                         </div>
                         <p className="absolute top-16 w-[80%] text-medium text-white ml-8 font-semibold">The Covid-19 Epidemic In 2022 Is Back</p>
@@ -72,7 +72,7 @@ export default function Blog() {
                             height={300}
                             priority={true}
                         />
-                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-blue-500 bg-[#013569] rounded-r-full items-center justify-center">
+                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-[#013569] rounded-r-full items-center justify-center">
                             <p className="text-white text-xs font-semibold">20 APR</p>
                         </div>
                         <p className="absolute top-16 w-[80%] text-medium text-white ml-8 font-semibold">The Covid-19 Epidemic In 2022 Is Back</p>
@@ -86,7 +86,7 @@ export default function Blog() {
                             height={300}
                             priority={true}
                         />
-                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-blue-500 bg-[#013569] rounded-r-full items-center justify-center">
+                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-[#013569] rounded-r-full items-center justify-center">
                             <p className="text-white text-xs font-semibold">20 APR</p>
                         </div>
                         <p className="absolute top-16 w-[80%] text-medium text-white ml-8 font-semibold">The Covid-19 Epidemic In 2023 Is Back</p>
@@ -102,7 +102,7 @@ export default function Blog() {
                             height={300}
                             priority={true}
                         />
-                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-blue-500 bg-[#013569] rounded-r-full items-center justify-center">
+                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-[#013569] rounded-r-full items-center justify-center">
                             <p className="text-white text-xs font-semibold">20 APR</p>
                         </div>
                         <p className="absolute top-16 w-[80%] text-medium text-white ml-8 font-semibold">The Covid-19 Epidemic In 2022 Is Back</p>
@@ -116,7 +116,7 @@ export default function Blog() {
                             height={300}
                             priority={true}
                         />
-                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-blue-500 bg-[#013569] rounded-r-full items-center justify-center">
+                        <div className="flex absolute top-4 -left-2 h-7 w-24 bg-[#013569] rounded-r-full items-center justify-center">
                             <p className="text-white text-xs font-semibold">17 MAR</p>
                         </div>
                         <p className="absolute top-16 w-[80%] text-medium text-white ml-8 font-semibold">Hac hendrerit mus nons semper suspendisse</p>

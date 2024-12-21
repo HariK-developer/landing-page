@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Ingredient() {
   return (
-    <div className="flex flex-col mt-[920px] lg:mt-56 lg:mt-56 xl:mt-56 2xl:mt-56 items-center">
+    <div className="flex flex-col mt-[850px] lg:mt-40 lg:mt-40 xl:mt-40 2xl:mt-40 items-center">
       <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row w-[80%]">
         <div className="flex flex-col basis-[39%] mb-4 md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0">
           <p className="text-[#013569] font-semibold">Ingredients</p>
@@ -117,3 +117,6 @@ export default function Ingredient() {
     </div>
   );
 }
+
+
+
