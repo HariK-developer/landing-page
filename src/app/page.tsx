@@ -11,17 +11,18 @@ import {
   faCarCrash,
 } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import Ingredient from "@/components/ingredients/ingredients";
 
 export default function Home() {
   return (
     <div className="h-screen p-8">
       <div className="bg-[#e3f5fb] h-full w-full">
-        <div className="">
+        <div >
           <h1 className="text-center text-[#013569] text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold p-8">
             Essential Vitamins
           </h1>
           <div className="flex flex-col sm:flex-row md:flex-row items-center">
-            <div className="flex flex-col basis-1/3 items-center mt-2 sm:mt-6 md:mt-0 lg:mt-0 xl:mt-6">
+            <div className="flex flex-col basis-1/3 items-end mt-2 sm:mt-6 md:mt-0 lg:mt-0 xl:mt-6">
               <div>
                 <p className="mb-2 text-slate-500 text-lg">
                   Online Medical Supplies
@@ -49,7 +50,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex  flex-col basis-1/3 items-center mt-8">
+            <div className="flex  flex-col basis-1/3 items-start mt-8">
               <div className="flex items-center mb-4">
                 <div className="flex rounded-full h-12 w-12 bg-[#18414e] justify-center items-center">
                   <FontAwesomeIcon icon={faTablet} />
@@ -90,7 +91,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="rounded-[50px] mt-20 md:mt:28 lg:mt-28 h-[950px] sm:h-1/4 md:h-2/6 lg:h-2/5 xl:h-96   w-full md:w-11/12 lg:w-4/5 bg-[#18414e] items-center mx-auto my-auto relative">
+        <div className="rounded-[50px] mt-20 md:mt:28 lg:mt-28 h-[950px] sm:h-1/4 md:h-2/6 lg:h-2/5 xl:h-96 w-full md:w-11/12 lg:w-4/5 bg-[#18414e] items-center mx-auto my-auto relative">
           <div className="absolute top-[-40px] md:top-[-60px] lg:top-[-60px] w-full">
             <div className="flex flex-col md:flex-row lg:flex-row items-center mb-12">
               <div className="flex flex-col mb-4 md:mb-0 lg:mb-0 basis-1/3 items-center justify-center ">
@@ -199,7 +200,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Ingredient></Ingredient>
       </div>
     </div>
+
+
   );
 }
